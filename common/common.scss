@@ -1,0 +1,17 @@
+/* Passkey button variants */
+.login-with-passkey,
+.passkey-login,
+.btn-passkey,
+button[data-auth-provider="passkey"],
+button[data-provider="passkey"],
+[data-auth-provider="passkey"] {
+  display: none !important;
+}
+
+/* OAuth2 OA button common variants */
+.login-buttons .btn-social.oauth2_basic,
+.login-buttons .btn-social[data-provider="oauth2_basic"],
+button[data-provider="oauth2_basic"],
+[data-auth-provider="oauth2_basic"] {
+  display: none !important;
+}
