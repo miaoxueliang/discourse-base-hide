@@ -2,16 +2,8 @@ import { apiInitializer } from "discourse/lib/api";
 
 function hideLoginButtons() {
   const fixedSelectors = [
-    ".login-with-passkey",
-    ".passkey-login",
-    ".btn-passkey",
-    "button[data-auth-provider='passkey']",
-    "button[data-provider='passkey']",
-    "[data-auth-provider='passkey']",
-    ".login-buttons .btn-social.oauth2_basic",
-    ".login-buttons .btn-social[data-provider='oauth2_basic']",
-    "button[data-provider='oauth2_basic']",
-    "[data-auth-provider='oauth2_basic']"
+    "oauth2_basic",
+    ".passkey-login-button"
   ];
 
   document.querySelectorAll(fixedSelectors.join(",")).forEach((el) => {
@@ -19,11 +11,8 @@ function hideLoginButtons() {
   });
 
   const textMatchers = [
-    "使用通行秘钥登录",
     "使用通行密钥登录",
-    "passkey",
-    "oa登录",
-    "oa login"
+    "OA登录"
   ];
 
   document.querySelectorAll("button, a, .btn, .btn-social").forEach((el) => {
