@@ -1,7 +1,9 @@
 {
   "name": "discourse-base-hide",
-  "description": "通用隐藏css/js插件",
+  "description": "【EEO】通用css/js插件，如隐藏登录页SSO按钮",
   "component": true,
-  "about_url": "https://local/discourse-base-hide",
-  "license_url": "https://opensource.org/licenses/MIT"
+  "about_url": "https://github.com/miaoxueliang/discourse-base-hide",
+  "license_url": "https://opensource.org/licenses/MIT",
+  "theme_version": "1.0.1",
+  "authors": "xueliang.miao@eeoa.com"
 }
